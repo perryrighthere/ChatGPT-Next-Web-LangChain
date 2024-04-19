@@ -405,7 +405,7 @@ const en: LocaleType = {
     TTS: {
       Enable: {
         Title: "Enable TTS",
-        SubTitle: "Enable text-to-speech service based on OpenAI",
+        SubTitle: "Enable text-to-speech service based on WestGenesis",
       },
       Autoplay: {
         Title: "Enable Autoplay",

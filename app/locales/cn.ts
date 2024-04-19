@@ -399,7 +399,7 @@ const cn = {
     TTS: {
       Enable: {
         Title: "启用文本转语音",
-        SubTitle: "启用基于 OpenAI 的文本生成语音服务",
+        SubTitle: "启用基于 WestGenesis 的文本生成语音服务",
       },
       Autoplay: {
         Title: "启用自动朗读",

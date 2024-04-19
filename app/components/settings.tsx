@@ -706,6 +706,7 @@ export function Settings() {
             </Popover>
           </ListItem>
 
+          {/*
           <ListItem
             title={Locale.Settings.Update.Version(currentVersion ?? "unknown")}
             subTitle={
@@ -730,6 +731,7 @@ export function Settings() {
               />
             )}
           </ListItem>
+          */}
 
           <ListItem title={Locale.Settings.SendKey}>
             <Select
@@ -927,7 +929,7 @@ export function Settings() {
 
           {!accessStore.hideUserApiKey && (
             <>
-              {
+              {/* {
                 // Conditionally render the following ListItem based on clientConfig.isApp
                 !clientConfig?.isApp && ( // only show if isApp is false
                   <ListItem
@@ -946,7 +948,7 @@ export function Settings() {
                     ></input>
                   </ListItem>
                 )
-              }
+              } */}
               {accessStore.useCustomConfig && (
                 <>
                   <ListItem
