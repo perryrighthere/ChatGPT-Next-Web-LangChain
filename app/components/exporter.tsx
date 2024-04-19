@@ -22,6 +22,7 @@ import {
 import CopyIcon from "../icons/copy.svg";
 import LoadingIcon from "../icons/three-dots.svg";
 import ChatGptIcon from "../icons/chatgpt.png";
+import WestGenesisIcon from "../icons/westgenesis-sidebar.svg";
 import ShareIcon from "../icons/share.svg";
 import BotIcon from "../icons/bot.png";
 
@@ -417,7 +418,7 @@ function ExportAvatar(props: { avatar: string }) {
   if (props.avatar === DEFAULT_MASK_AVATAR) {
     return (
       <img
-        src={BotIcon.src}
+        src={WestGenesisIcon.src}
         width={30}
         height={30}
         alt="bot"
@@ -553,7 +554,7 @@ export function ImagePreviewer(props: {
         <div className={styles["chat-info"]}>
           <div className={styles["logo"] + " no-dark"}>
             <NextImage
-              src={ChatGptIcon.src}
+              src={WestGenesisIcon.src}
               alt="logo"
               width={50}
               height={50}

@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import styles from "./home.module.scss";
 
 import BotIcon from "../icons/bot.svg";
+import WestGenesisIcon from "../icons/westgenesis.svg";
 import LoadingIcon from "../icons/three-dots.svg";
 
 import { useMobileScreen } from "../utils";
@@ -34,7 +35,7 @@ import { identifyDefaultClaudeModel } from "../utils/checkers";
 export function Loading(props: { noLogo?: boolean }) {
   return (
     <div className={styles["loading-content"] + " no-dark"}>
-      {!props.noLogo && <BotIcon />}
+      {!props.noLogo && <WestGenesisIcon />}
       <LoadingIcon />
     </div>
   );
