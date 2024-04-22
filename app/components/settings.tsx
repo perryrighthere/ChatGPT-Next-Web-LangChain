@@ -841,7 +841,7 @@ export function Settings() {
 
         <SyncItems />
 
-        <List>
+        {/* <List>
           <ListItem
             title={Locale.Settings.Mask.Splash.Title}
             subTitle={Locale.Settings.Mask.Splash.SubTitle}
@@ -874,7 +874,7 @@ export function Settings() {
               }
             ></input>
           </ListItem>
-        </List>
+        </List> */}
 
         <List>
           <ListItem
@@ -1259,7 +1259,7 @@ export function Settings() {
           <UserPromptModal onClose={() => setShowPromptModal(false)} />
         )}
 
-        <List>
+        {/* <List>
           <PluginConfigList
             pluginConfig={config.pluginConfig}
             updateConfig={(updater) => {
@@ -1268,7 +1268,7 @@ export function Settings() {
               config.update((config) => (config.pluginConfig = pluginConfig));
             }}
           />
-        </List>
+        </List> */}
 
         {/* <List>
           <TTSConfigList
@@ -1281,7 +1281,7 @@ export function Settings() {
           />
         </List> */}
 
-        <List>
+        {/* <List>
           <STTConfigList
             sttConfig={config.sttConfig}
             updateConfig={(updater) => {
@@ -1290,7 +1290,7 @@ export function Settings() {
               config.update((config) => (config.sttConfig = sttConfig));
             }}
           />
-        </List>
+        </List> */}
 
         <DangerItems />
       </div>

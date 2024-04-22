@@ -186,7 +186,7 @@ export function SideBar(props: { className?: string }) {
       </div>
 
       <div className={styles["sidebar-header-bar"]}>
-        <IconButton
+        {/* <IconButton
           icon={<MaskIcon />}
           text={shouldNarrow ? undefined : Locale.Mask.Name}
           className={styles["sidebar-bar-button"]}
@@ -198,14 +198,14 @@ export function SideBar(props: { className?: string }) {
             }
           }}
           shadow
-        />
-        <IconButton
+        /> */}
+        {/* <IconButton
           icon={<PluginIcon />}
           text={shouldNarrow ? undefined : Locale.Plugin.Name}
           className={styles["sidebar-bar-button"]}
           onClick={() => navigate(Path.Plugins, { state: { fromHome: true } })}
           shadow
-        />
+        /> */}
         {shouldNarrow && (
           <IconButton
             icon={<SearchIcon />}

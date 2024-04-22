@@ -597,19 +597,19 @@ export function ChatActions(props: {
           icon={<PromptIcon />}
         />
 
-        <ChatAction
+        {/* <ChatAction
           onClick={() => {
             navigate(Path.Masks);
           }}
           text={Locale.Chat.InputActions.Masks}
           icon={<MaskIcon />}
-        />
+        /> */}
 
-        <ChatAction
+        {/* <ChatAction
           onClick={() => setShowModelSelector(true)}
           text={currentModel}
           icon={<RobotIcon />}
-        />
+        /> */}
 
         {config.pluginConfig.enable &&
           /^gpt(?!.*03\d{2}$).*$/.test(currentModel) &&
