@@ -56,7 +56,7 @@ export const DEFAULT_CONFIG = {
   models: DEFAULT_MODELS as any as LLMModel[],
 
   modelConfig: {
-    model: "gpt-3.5-turbo" as ModelType,
+    model: "gpt-4-vision-preview" as ModelType,
     temperature: 0.5,
     top_p: 1,
     max_tokens: 4000,
@@ -76,7 +76,7 @@ export const DEFAULT_CONFIG = {
   },
 
   ttsConfig: {
-    enable: false,
+    enable: true,
     autoplay: false,
     model: DEFAULT_TTS_MODEL,
     voice: DEFAULT_TTS_VOICE,
@@ -84,7 +84,7 @@ export const DEFAULT_CONFIG = {
   },
 
   sttConfig: {
-    enable: false,
+    enable: true,
     engine: DEFAULT_STT_ENGINE,
   },
 };

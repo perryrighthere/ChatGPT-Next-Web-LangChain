@@ -205,13 +205,13 @@ export function MaskConfig(props: {
         ) : null}
       </List>
 
-      <List>
+      {/* <List>
         <ModelConfigList
           modelConfig={{ ...props.mask.modelConfig }}
           updateConfig={updateConfig}
         />
         {props.extraListItems}
-      </List>
+      </List> */}
     </>
   );
 }
@@ -560,7 +560,7 @@ export function MaskPage() {
                     <div className={styles["mask-info"] + " one-line"}>
                       {`${Locale.Mask.Item.Info(m.context.length)} / ${
                         ALL_LANG_OPTIONS[m.lang]
-                      } / ${m.modelConfig.model}`}
+                      } `}
                     </div>
                   </div>
                 </div>
