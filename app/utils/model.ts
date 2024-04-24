@@ -10,6 +10,7 @@ export function collectModelTable(
       available: boolean;
       name: string;
       displayName: string;
+      nickname?: string;
       provider?: LLMModel["provider"]; // Marked as optional
     }
   > = {};
@@ -18,7 +19,7 @@ export function collectModelTable(
   models.forEach((m) => {
     modelTable[m.name] = {
       ...m,
-      displayName: m.name, // 'provider' is copied over if it exists
+      displayName: m.nickname ?? m.name, // 'provider' is copied over if it exists
     };
   });
 

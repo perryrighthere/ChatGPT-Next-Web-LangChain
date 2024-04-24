@@ -240,7 +240,8 @@ export const DEFAULT_MODELS = [
   //   },
   // },
   {
-    name: "Vision Model",
+    name: "gpt-4-vision-preview",
+    nickname: "WestGenesis Vision Model",
     available: true,
     provider: {
       id: "openai",
@@ -249,7 +250,8 @@ export const DEFAULT_MODELS = [
     },
   },
   {
-    name: "Language Model",
+    name: "gpt-3.5-turbo",
+    nickname: "WestGenesis Language Model",
     available: true,
     provider: {
       id: "openai",

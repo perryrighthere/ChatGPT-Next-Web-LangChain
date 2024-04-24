@@ -102,6 +102,7 @@ export interface LLMUsage {
 export interface LLMModel {
   name: string;
   available: boolean;
+  nickname?: string;
   provider: LLMModelProvider;
 }
 
