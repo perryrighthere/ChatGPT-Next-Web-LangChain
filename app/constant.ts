@@ -126,19 +126,19 @@ Latex inline: \\(x^2\\)
 Latex block: $$e=mc^2$$
 `;
 
-export const SUMMARIZE_MODEL = "gpt-3.5-turbo";
+export const SUMMARIZE_MODEL = "Language Model";
 export const GEMINI_SUMMARIZE_MODEL = "gemini-pro";
 
 export const KnowledgeCutOffDate: Record<string, string> = {
   default: "2021-09",
-  "gpt-4-turbo": "2023-12",
-  "gpt-4-turbo-preview": "2023-12",
-  "gpt-4-1106-preview": "2023-04",
-  "gpt-4-0125-preview": "2023-12",
-  "gpt-4-vision-preview": "2023-04",
+  // "gpt-4-turbo": "2023-12",
+  // "gpt-4-turbo-preview": "2023-12",
+  // "gpt-4-1106-preview": "2023-04",
+  // "gpt-4-0125-preview": "2023-12",
+  // "gpt-4-vision-preview": "2023-04",
   // After improvements,
   // it's now easier to add "KnowledgeCutOffDate" instead of stupid hardcoding it, as was done previously.
-  "gemini-pro": "2023-12",
+  // "gemini-pro": "2023-12",
 };
 
 export const DEFAULT_TTS_MODEL = "tts-1";
@@ -158,8 +158,89 @@ export const DEFAULT_STT_ENGINES = ["WebAPI", "OpenAI Whisper"];
 export const FIREFOX_DEFAULT_STT_ENGINE = "OpenAI Whisper";
 
 export const DEFAULT_MODELS = [
+  // {
+  //   name: "gpt-4",
+  //   available: true,
+  //   provider: {
+  //     id: "openai",
+  //     providerName: "OpenAI",
+  //     providerType: "openai",
+  //   },
+  // },
+  // {
+  //   name: "gpt-4-0613",
+  //   available: true,
+  //   provider: {
+  //     id: "openai",
+  //     providerName: "OpenAI",
+  //     providerType: "openai",
+  //   },
+  // },
+  // {
+  //   name: "gpt-4-32k",
+  //   available: true,
+  //   provider: {
+  //     id: "openai",
+  //     providerName: "OpenAI",
+  //     providerType: "openai",
+  //   },
+  // },
+  // {
+  //   name: "gpt-4-32k-0613",
+  //   available: true,
+  //   provider: {
+  //     id: "openai",
+  //     providerName: "OpenAI",
+  //     providerType: "openai",
+  //   },
+  // },
+  // {
+  //   name: "gpt-4-turbo",
+  //   available: true,
+  //   provider: {
+  //     id: "openai",
+  //     providerName: "OpenAI",
+  //     providerType: "openai",
+  //   },
+  // },
+  // {
+  //   name: "gpt-4-turbo-2024-04-09",
+  //   available: true,
+  //   provider: {
+  //     id: "openai",
+  //     providerName: "OpenAI",
+  //     providerType: "openai",
+  //   },
+  // },
+  // {
+  //   name: "gpt-4-turbo-preview",
+  //   available: true,
+  //   provider: {
+  //     id: "openai",
+  //     providerName: "OpenAI",
+  //     providerType: "openai",
+  //   },
+  // },
+  // {
+  //   name: "gpt-4-1106-preview",
+  //   available: true,
+  //   provider: {
+  //     id: "openai",
+  //     providerName: "OpenAI",
+  //     providerType: "openai",
+  //   },
+  // },
+  // {
+  //   name: "gpt-4-0125-preview",
+  //   available: true,
+  //   provider: {
+  //     id: "openai",
+  //     providerName: "OpenAI",
+  //     providerType: "openai",
+  //   },
+  // },
   {
-    name: "gpt-4",
+    name: "Vision Model",
     available: true,
     provider: {
       id: "openai",
@@ -168,7 +249,7 @@ export const DEFAULT_MODELS = [
     },
   },
   {
-    name: "gpt-4-0613",
+    name: "Language Model",
     available: true,
     provider: {
       id: "openai",
@@ -176,204 +257,123 @@ export const DEFAULT_MODELS = [
       providerType: "openai",
     },
   },
-  {
-    name: "gpt-4-32k",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "gpt-4-32k-0613",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "gpt-4-turbo",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "gpt-4-turbo-2024-04-09",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "gpt-4-turbo-preview",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "gpt-4-1106-preview",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "gpt-4-0125-preview",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "gpt-4-vision-preview",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "gpt-3.5-turbo",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "gpt-3.5-turbo-0125",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "gpt-3.5-turbo-0613",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "gpt-3.5-turbo-1106",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "gpt-3.5-turbo-16k",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "gpt-3.5-turbo-16k-0613",
-    available: true,
-    provider: {
-      id: "openai",
-      providerName: "OpenAI",
-      providerType: "openai",
-    },
-  },
-  {
-    name: "gemini-pro",
-    available: true,
-    provider: {
-      id: "google",
-      providerName: "Google",
-      providerType: "google",
-    },
-  },
-  {
-    name: "gemini-pro-vision",
-    available: true,
-    provider: {
-      id: "google",
-      providerName: "Google",
-      providerType: "google",
-    },
-  },
-  {
-    name: "claude-instant-1.2",
-    available: true,
-    provider: {
-      id: "anthropic",
-      providerName: "Anthropic",
-      providerType: "anthropic",
-    },
-  },
-  {
-    name: "claude-2.0",
-    available: true,
-    provider: {
-      id: "anthropic",
-      providerName: "Anthropic",
-      providerType: "anthropic",
-    },
-  },
-  {
-    name: "claude-2.1",
-    available: true,
-    provider: {
-      id: "anthropic",
-      providerName: "Anthropic",
-      providerType: "anthropic",
-    },
-  },
-  {
-    name: "claude-3-opus-20240229",
-    available: true,
-    provider: {
-      id: "anthropic",
-      providerName: "Anthropic",
-      providerType: "anthropic",
-    },
-  },
-  {
-    name: "claude-3-sonnet-20240229",
-    available: true,
-    provider: {
-      id: "anthropic",
-      providerName: "Anthropic",
-      providerType: "anthropic",
-    },
-  },
-  {
-    name: "claude-3-haiku-20240307",
-    available: true,
-    provider: {
-      id: "anthropic",
-      providerName: "Anthropic",
-      providerType: "anthropic",
-    },
-  },
+  // {
+  //   name: "gpt-3.5-turbo-0125",
+  //   available: true,
+  //   provider: {
+  //     id: "openai",
+  //     providerName: "OpenAI",
+  //     providerType: "openai",
+  //   },
+  // },
+  // {
+  //   name: "gpt-3.5-turbo-0613",
+  //   available: true,
+  //   provider: {
+  //     id: "openai",
+  //     providerName: "OpenAI",
+  //     providerType: "openai",
+  //   },
+  // },
+  // {
+  //   name: "gpt-3.5-turbo-1106",
+  //   available: true,
+  //   provider: {
+  //     id: "openai",
+  //     providerName: "OpenAI",
+  //     providerType: "openai",
+  //   },
+  // },
+  // {
+  //   name: "gpt-3.5-turbo-16k",
+  //   available: true,
+  //   provider: {
+  //     id: "openai",
+  //     providerName: "OpenAI",
+  //     providerType: "openai",
+  //   },
+  // },
+  // {
+  //   name: "gpt-3.5-turbo-16k-0613",
+  //   available: true,
+  //   provider: {
+  //     id: "openai",
+  //     providerName: "OpenAI",
+  //     providerType: "openai",
+  //   },
+  // },
+  // {
+  //   name: "gemini-pro",
+  //   available: true,
+  //   provider: {
+  //     id: "google",
+  //     providerName: "Google",
+  //     providerType: "google",
+  //   },
+  // },
+  // {
+  //   name: "gemini-pro-vision",
+  //   available: true,
+  //   provider: {
+  //     id: "google",
+  //     providerName: "Google",
+  //     providerType: "google",
+  //   },
+  // },
+  // {
+  //   name: "claude-instant-1.2",
+  //   available: true,
+  //   provider: {
+  //     id: "anthropic",
+  //     providerName: "Anthropic",
+  //     providerType: "anthropic",
+  //   },
+  // },
+  // {
+  //   name: "claude-2.0",
+  //   available: true,
+  //   provider: {
+  //     id: "anthropic",
+  //     providerName: "Anthropic",
+  //     providerType: "anthropic",
+  //   },
+  // },
+  // {
+  //   name: "claude-2.1",
+  //   available: true,
+  //   provider: {
+  //     id: "anthropic",
+  //     providerName: "Anthropic",
+  //     providerType: "anthropic",
+  //   },
+  // },
+  // {
+  //   name: "claude-3-opus-20240229",
+  //   available: true,
+  //   provider: {
+  //     id: "anthropic",
+  //     providerName: "Anthropic",
+  //     providerType: "anthropic",
+  //   },
+  // },
+  // {
+  //   name: "claude-3-sonnet-20240229",
+  //   available: true,
+  //   provider: {
+  //     id: "anthropic",
+  //     providerName: "Anthropic",
+  //     providerType: "anthropic",
+  //   },
+  // },
+  // {
+  //   name: "claude-3-haiku-20240307",
+  //   available: true,
+  //   provider: {
+  //     id: "anthropic",
+  //     providerName: "Anthropic",
+  //     providerType: "anthropic",
+  //   },
+  // },
 ] as const;
 
 export const CHAT_PAGE_SIZE = 15;

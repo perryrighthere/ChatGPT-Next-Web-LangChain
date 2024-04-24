@@ -1244,7 +1244,7 @@ export function Settings() {
           </ListItem>
         </List>
 
-        {/* <List>
+        <List>
           <ModelConfigList
             modelConfig={config.modelConfig}
             updateConfig={(updater) => {
@@ -1253,7 +1253,7 @@ export function Settings() {
               config.update((config) => (config.modelConfig = modelConfig));
             }}
           />
-        </List> */}
+        </List>
 
         {shouldShowPromptModal && (
           <UserPromptModal onClose={() => setShowPromptModal(false)} />

@@ -99,9 +99,9 @@ function getSummarizeModel(currentModel: string) {
   const model = DEFAULT_MODELS.find((m) => m.name === currentModel);
   console.log("model", model);
   if (!model) return currentModel;
-  if (model.provider.providerType === "google") return GEMINI_SUMMARIZE_MODEL;
+  // if (model.provider.providerType === "google") return GEMINI_SUMMARIZE_MODEL;
   // if it is using gpt-* models, force to use 3.5 to summarize
-  if (currentModel.startsWith("gpt")) {
+  if (currentModel.startsWith("Language")) {
     return SUMMARIZE_MODEL;
   }
   if (currentModel.startsWith("gemini-pro")) {
@@ -388,7 +388,7 @@ export const useChatStore = createPersistStore(
           session.mask.usePlugins &&
           (allPlugins.length > 0 || isEnableRAG) &&
           modelConfig.model.startsWith("gpt") &&
-          modelConfig.model != "gpt-4-vision-preview"
+          modelConfig.model != "Vision Model"
         ) {
           console.log("[ToolAgent] start");
           const pluginToolNames = allPlugins.map((m) => m.toolName);
