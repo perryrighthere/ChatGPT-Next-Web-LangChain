@@ -908,7 +908,7 @@ export function Settings() {
           </ListItem>
         </List>
 
-        <List id={SlotID.CustomModel}>
+        {/* <List id={SlotID.CustomModel}>
           {showAccessCode && (
             <ListItem
               title={Locale.Settings.Access.AccessCode.Title}
@@ -929,7 +929,7 @@ export function Settings() {
 
           {!accessStore.hideUserApiKey && (
             <>
-              {/* {
+              {
                 // Conditionally render the following ListItem based on clientConfig.isApp
                 !clientConfig?.isApp && ( // only show if isApp is false
                   <ListItem
@@ -948,7 +948,7 @@ export function Settings() {
                     ></input>
                   </ListItem>
                 )
-              } */}
+              }
               {accessStore.useCustomConfig && (
                 <>
                   <ListItem
@@ -1242,7 +1242,7 @@ export function Settings() {
               }
             ></input>
           </ListItem>
-        </List>
+        </List> */}
 
         <List>
           <ModelConfigList
@@ -1259,7 +1259,7 @@ export function Settings() {
           <UserPromptModal onClose={() => setShowPromptModal(false)} />
         )}
 
-        {/* <List>
+        <List>
           <PluginConfigList
             pluginConfig={config.pluginConfig}
             updateConfig={(updater) => {
@@ -1268,7 +1268,7 @@ export function Settings() {
               config.update((config) => (config.pluginConfig = pluginConfig));
             }}
           />
-        </List> */}
+        </List>
 
         {/* <List>
           <TTSConfigList
