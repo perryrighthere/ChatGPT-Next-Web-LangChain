@@ -1259,7 +1259,7 @@ export function Settings() {
           <UserPromptModal onClose={() => setShowPromptModal(false)} />
         )}
 
-        <List>
+        {/* <List>
           <PluginConfigList
             pluginConfig={config.pluginConfig}
             updateConfig={(updater) => {
@@ -1268,7 +1268,7 @@ export function Settings() {
               config.update((config) => (config.pluginConfig = pluginConfig));
             }}
           />
-        </List>
+        </List> */}
 
         {/* <List>
           <TTSConfigList
