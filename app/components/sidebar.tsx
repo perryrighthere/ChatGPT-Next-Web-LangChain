@@ -175,10 +175,10 @@ export function SideBar(props: { className?: string }) {
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
         <div className={styles["sidebar-title"]} data-tauri-drag-region>
-          WestGenesis
+          西部创源
         </div>
         <div className={styles["sidebar-sub-title"]}>
-          创源大模型智能助手
+        做最专业的汽车大模型
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <WestGenesisIcon />
