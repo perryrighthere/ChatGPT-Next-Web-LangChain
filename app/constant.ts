@@ -277,7 +277,7 @@ export const DEFAULT_MODELS = [
   //   },
   // },
   {
-    name: "gpt-4-vision-preview",
+    name: "gpt-4o-2024-05-13",
     nickname: "WestGenesis Vision Model",
     available: true,
     provider: {

@@ -291,7 +291,11 @@ export function getMessageImages(message: RequestMessage): string[] {
 }
 
 export function isVisionModel(model: string) {
-  const visionKeywords = ["vision", "claude-3"];
+  const visionKeywords = [
+    "vision", 
+    "claude-3",
+    "gpt-4o",
+  ];
   const isGpt4Turbo =
     model.includes("gpt-4-turbo") && !model.includes("preview");
 

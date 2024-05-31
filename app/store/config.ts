@@ -56,7 +56,7 @@ export const DEFAULT_CONFIG = {
   models: DEFAULT_MODELS as any as LLMModel[],
 
   modelConfig: {
-    model: "gpt-4-vision-preview" as ModelType,
+    model: "gpt-4o-2024-05-13" as ModelType,
     temperature: 0.5,
     top_p: 1,
     max_tokens: 4000,
